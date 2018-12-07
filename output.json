@@ -1,0 +1,51 @@
+{
+  "usage": {
+    "text_units": 1,
+    "text_characters": 56,
+    "features": 3
+  },
+  "sentiment": {
+    "document": {
+      "score": -0.943803,
+      "label": "negative"
+    }
+  },
+  "language": "en",
+  "keywords": [
+    {
+      "text": "exams",
+      "relevance": 0.716157,
+      "emotion": {
+        "sadness": 0.164991,
+        "joy": 0.0447,
+        "fear": 0.742454,
+        "disgust": 0.024405,
+        "anger": 0.274529
+      },
+      "count": 1
+    },
+    {
+      "text": "week",
+      "relevance": 0.672861,
+      "emotion": {
+        "sadness": 0.164991,
+        "joy": 0.0447,
+        "fear": 0.742454,
+        "disgust": 0.024405,
+        "anger": 0.274529
+      },
+      "count": 1
+    }
+  ],
+  "emotion": {
+    "document": {
+      "emotion": {
+        "sadness": 0.164991,
+        "joy": 0.0447,
+        "fear": 0.742454,
+        "disgust": 0.024405,
+        "anger": 0.274529
+      }
+    }
+  }
+}

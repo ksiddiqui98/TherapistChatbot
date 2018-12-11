@@ -27,7 +27,11 @@ current_action = ''
 
 conversation = {}
 
+
 while current_action != 'end_conversation':
+    with open('output.json','w') as f:
+        json.dump(conversation, f, indent=2)
+
     current_action = ''
     listOutputs = []
 
@@ -72,7 +76,6 @@ while current_action != 'end_conversation':
         except WatsonApiException as e:
             continue
 
-
 assistant.delete_session(
     assistant_id= assistant_id,
     session_id= session_id
@@ -95,6 +98,5 @@ def getFeatures():
     conversation['Emotions'] = emotions
     conversation['Sentiment Score'] = sentimentScore
 
-output = open('output.json', 'w')
-output.write(json.dumps(conversation, indent=2))
+
 

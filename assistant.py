@@ -1,7 +1,7 @@
 from watson_developer_cloud import AssistantV2, NaturalLanguageUnderstandingV1, WatsonApiException
 from watson_developer_cloud.natural_language_understanding_v1 \
     import Features, EmotionOptions, SentimentOptions
-import time
+import json
 
 natural_language_understanding = NaturalLanguageUnderstandingV1(
     version='2018-03-16',
@@ -25,8 +25,11 @@ session_id = assistant.create_session(
 user_input = ''
 current_action = ''
 
+conversation = {}
+
 while current_action != 'end_conversation':
     current_action = ''
+    listOutputs = []
 
     response = assistant.message(
         assistant_id,
@@ -38,22 +41,26 @@ while current_action != 'end_conversation':
 
     if response['output']['generic']:
         print(response['output']['generic'][0]['text'])
+        conversation[response['output']['generic'][0]['text']] = listOutputs
 
     if 'actions' in response['output']:
         if response['output']['actions'][0]['type'] == 'client':
             current_action = response['output']['actions'][0]['name']
 
+
     if current_action != 'end_conversation':
+
         user_input = input('>> ')
+
+        listOutputs.append({'User': user_input})
         try:
             features = natural_language_understanding.analyze(
                 text=user_input,
                 features=Features(sentiment=SentimentOptions(), emotion=EmotionOptions())
             ).get_result()
-            print(user_input)
             if features.get('sentiment') is not None:
                 sentimentScore = features['sentiment']['document']['score']
-                print("(Sentiment Score:", sentimentScore, ")")
+                listOutputs.append({'Sentiment score' :sentimentScore})
             if features.get('emotion') is not None:
                 allEmotions = features['emotion']['document']['emotion']
                 emotions = {}
@@ -61,7 +68,7 @@ while current_action != 'end_conversation':
                     if allEmotions[e] > .3:
                         emotions = {e: allEmotions[e]}
 
-                print("(Emotions:", emotions,  ")")
+                listOutputs.append({'Emotions' : emotions})
         except WatsonApiException as e:
             continue
 
@@ -74,7 +81,7 @@ assistant.delete_session(
 #get emotions and sentiment score from text
 def getFeatures():
     response = natural_language_understanding.analyze(
-        text="I have way too many exams this week and I'm stressed out",
+        text="I have way too many exams this week and I'm stressed out.",
         features=Features(sentiment=SentimentOptions(), emotion = EmotionOptions())
     ).get_result()
 
@@ -85,7 +92,9 @@ def getFeatures():
         if allEmotions[e] > .3:
             emotions = {e: allEmotions[e]}
 
-    print("Sentiment Score: ", sentimentScore)
-    print("Emotions: ", emotions)
+    conversation['Emotions'] = emotions
+    conversation['Sentiment Score'] = sentimentScore
 
-#getFeatures()
+output = open('output.json', 'w')
+output.write(json.dumps(conversation, indent=2))
+

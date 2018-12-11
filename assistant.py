@@ -26,8 +26,10 @@ user_input = ''
 current_action = ''
 
 while current_action != 'end_conversation':
+    # Clear any action flag set by the previous response.
     current_action = ''
 
+    # Send message to assistant.
     response = assistant.message(
         assistant_id,
         session_id,
@@ -36,15 +38,16 @@ while current_action != 'end_conversation':
         }
     ).get_result()
 
+    # Print the output from dialog, if any. Assumes a single text response.
     if response['output']['generic']:
         print(response['output']['generic'][0]['text'])
 
+    # Check for client actions requested by the assistant.
     if 'actions' in response['output']:
         if response['output']['actions'][0]['type'] == 'client':
             current_action = response['output']['actions'][0]['name']
 
-    if current_action == 'display_time':
-        print('The current time is ' + time.strftime('%I:%M:%S %p') + '.')
+    # If we're not done, prompt for next round of input.
     if current_action != 'end_conversation':
         user_input = input('>> ')
 
@@ -69,3 +72,5 @@ def getFeatures():
 
     print("Sentiment Score: ", sentimentScore)
     print("Emotions: ", emotions)
+
+getFeatures()

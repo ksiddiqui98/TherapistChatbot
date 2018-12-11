@@ -1,4 +1,4 @@
-from watson_developer_cloud import AssistantV2, NaturalLanguageUnderstandingV1
+from watson_developer_cloud import AssistantV2, NaturalLanguageUnderstandingV1, WatsonApiException
 from watson_developer_cloud.natural_language_understanding_v1 \
     import Features, EmotionOptions, SentimentOptions
 import time
@@ -26,10 +26,8 @@ user_input = ''
 current_action = ''
 
 while current_action != 'end_conversation':
-    # Clear any action flag set by the previous response.
     current_action = ''
 
-    # Send message to assistant.
     response = assistant.message(
         assistant_id,
         session_id,
@@ -38,18 +36,35 @@ while current_action != 'end_conversation':
         }
     ).get_result()
 
-    # Print the output from dialog, if any. Assumes a single text response.
     if response['output']['generic']:
         print(response['output']['generic'][0]['text'])
 
-    # Check for client actions requested by the assistant.
     if 'actions' in response['output']:
         if response['output']['actions'][0]['type'] == 'client':
             current_action = response['output']['actions'][0]['name']
 
-    # If we're not done, prompt for next round of input.
     if current_action != 'end_conversation':
         user_input = input('>> ')
+        try:
+            features = natural_language_understanding.analyze(
+                text=user_input,
+                features=Features(sentiment=SentimentOptions(), emotion=EmotionOptions())
+            ).get_result()
+            print(user_input)
+            if features.get('sentiment') is not None:
+                sentimentScore = features['sentiment']['document']['score']
+                print("(Sentiment Score:", sentimentScore, ")")
+            if features.get('emotion') is not None:
+                allEmotions = features['emotion']['document']['emotion']
+                emotions = {}
+                for e in allEmotions:
+                    if allEmotions[e] > .3:
+                        emotions = {e: allEmotions[e]}
+
+                print("(Emotions:", emotions,  ")")
+        except WatsonApiException as e:
+            continue
+
 
 assistant.delete_session(
     assistant_id= assistant_id,
@@ -73,4 +88,4 @@ def getFeatures():
     print("Sentiment Score: ", sentimentScore)
     print("Emotions: ", emotions)
 
-getFeatures()
+#getFeatures()

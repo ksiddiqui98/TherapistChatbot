@@ -1,0 +1,1403 @@
+{
+  "name": "therapist",
+  "intents": [
+    {
+      "intent": "General_Ending",
+      "examples": [
+        {
+          "text": "Im done"
+        },
+        {
+          "text": "I d like to stop doing this"
+        },
+        {
+          "text": "I have got to go"
+        },
+        {
+          "text": "I want to quit"
+        },
+        {
+          "text": "I'm done"
+        },
+        {
+          "text": "Im good thank you"
+        },
+        {
+          "text": "Time to go"
+        },
+        {
+          "text": "That's everything"
+        },
+        {
+          "text": "That is all"
+        },
+        {
+          "text": "Thanks very much, bye!"
+        },
+        {
+          "text": "Thanks, bye!"
+        },
+        {
+          "text": "Thank you for your time"
+        },
+        {
+          "text": "Stop talking to me"
+        },
+        {
+          "text": "Stop doing this"
+        },
+        {
+          "text": "Shut up"
+        },
+        {
+          "text": "See you"
+        },
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "Ok goodbye"
+        },
+        {
+          "text": "It was nice chatting with you"
+        },
+        {
+          "text": "I'm leaving now"
+        },
+        {
+          "text": "Bye bye"
+        },
+        {
+          "text": "Bye now"
+        },
+        {
+          "text": "Catch you later"
+        },
+        {
+          "text": "Cya later"
+        },
+        {
+          "text": "End trial"
+        },
+        {
+          "text": "Ending this session"
+        },
+        {
+          "text": "Finished now, good bye"
+        },
+        {
+          "text": "Get lost"
+        },
+        {
+          "text": "Go away"
+        },
+        {
+          "text": "Go off"
+        },
+        {
+          "text": "Going now"
+        },
+        {
+          "text": "Good. bye."
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Have a nice day?"
+        },
+        {
+          "text": "Hey bot go away"
+        },
+        {
+          "text": "I am leaving"
+        },
+        {
+          "text": "I am out of here"
+        }
+      ],
+      "description": "End the conversation."
+    },
+    {
+      "intent": "yes",
+      "examples": [
+        {
+          "text": "sometimes"
+        },
+        {
+          "text": "sure"
+        },
+        {
+          "text": "okay"
+        },
+        {
+          "text": "yeah"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": "positive affirmation"
+    },
+    {
+      "intent": "General_Greetings",
+      "examples": [
+        {
+          "text": "You there"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hey twin"
+        },
+        {
+          "text": "Hey you"
+        },
+        {
+          "text": "Hi advisor"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "How are things going?"
+        },
+        {
+          "text": "How are you today?"
+        },
+        {
+          "text": "How have you been?"
+        },
+        {
+          "text": "How is it going?"
+        },
+        {
+          "text": "How r u?"
+        },
+        {
+          "text": "Looking good eve"
+        },
+        {
+          "text": "Ok take me back"
+        },
+        {
+          "text": "What's new?"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "Who is this?"
+        },
+        {
+          "text": "Good day"
+        },
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good to see you"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Have you been well?"
+        },
+        {
+          "text": "Hello Agent"
+        },
+        {
+          "text": "Hello I am looking for some help here"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hey how are you doing"
+        },
+        {
+          "text": "Hey there all"
+        }
+      ],
+      "description": "Greet the bot."
+    },
+    {
+      "intent": "good",
+      "examples": [
+        {
+          "text": "I'm good."
+        },
+        {
+          "text": "I'm happy."
+        },
+        {
+          "text": "I'm fine."
+        },
+        {
+          "text": "I'm okay."
+        },
+        {
+          "text": "good"
+        },
+        {
+          "text": "fine"
+        },
+        {
+          "text": "yes"
+        },
+        {
+          "text": "I had a wonderful day"
+        },
+        {
+          "text": "great"
+        },
+        {
+          "text": "terrific"
+        },
+        {
+          "text": "I'm so happy and I'm passing all my classes and I just finished a project for this class."
+        },
+        {
+          "text": "i'm okay"
+        },
+        {
+          "text": "i'm happy most of the time and passing all my classes"
+        },
+        {
+          "text": "I made a new friend"
+        },
+        {
+          "text": "I'm doing well."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "bad",
+      "examples": [
+        {
+          "text": "terrible"
+        },
+        {
+          "text": "I'm sad."
+        },
+        {
+          "text": "I'm not doing good."
+        },
+        {
+          "text": "I'm not okay."
+        },
+        {
+          "text": "I'm not doing well."
+        },
+        {
+          "text": "i'm doing bad"
+        },
+        {
+          "text": "not good"
+        },
+        {
+          "text": "bad"
+        },
+        {
+          "text": "Eh"
+        },
+        {
+          "text": "I tripped today and got a cut"
+        },
+        {
+          "text": "My dog died"
+        },
+        {
+          "text": "School is going fine but I have been stressed about this upcomgin exam"
+        },
+        {
+          "text": "im feeling stressed"
+        },
+        {
+          "text": "im really stressed because of homework"
+        },
+        {
+          "text": "im upset"
+        },
+        {
+          "text": "i'm really stressed about my exams and think i'm gonna fail"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "General_About_You",
+      "examples": [
+        {
+          "text": "How can I configure you?"
+        },
+        {
+          "text": "Do you know who you are?"
+        },
+        {
+          "text": "Do you have a name?"
+        },
+        {
+          "text": "Describe your self"
+        },
+        {
+          "text": "Can I use another language?"
+        },
+        {
+          "text": "How old are you?"
+        },
+        {
+          "text": "How do you function?"
+        },
+        {
+          "text": "About you"
+        },
+        {
+          "text": "Why are you here?"
+        },
+        {
+          "text": "Who are you?"
+        },
+        {
+          "text": "Where were you born?"
+        },
+        {
+          "text": "Where are you from?"
+        },
+        {
+          "text": "What's your name?"
+        },
+        {
+          "text": "What should I know about you?"
+        },
+        {
+          "text": "What languages do you speak?"
+        },
+        {
+          "text": "Tell me something about yourself"
+        },
+        {
+          "text": "Tell me about your life"
+        },
+        {
+          "text": "Let us talk about you"
+        },
+        {
+          "text": "Introduce your self"
+        },
+        {
+          "text": "I want to set up the chat bot for my shop"
+        }
+      ],
+      "description": "Request generic personal attributes."
+    },
+    {
+      "intent": "no",
+      "examples": [
+        {
+          "text": "no"
+        },
+        {
+          "text": "not really"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "risk_factor",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "low self-esteem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "self-critical",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pessimistic",
+          "synonyms": [
+            "gloomier",
+            "bleak",
+            "downbeat",
+            "cynical"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "trauma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "anxiety",
+          "synonyms": [
+            "stress",
+            "tension",
+            "tense",
+            "nervous",
+            "stressed",
+            "anxious",
+            "strain"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "eating disorder",
+          "synonyms": [
+            "bulimia",
+            "anorexia",
+            "binge eating"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "post-traumatic stress disorder",
+          "synonyms": [
+            "ptsd"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "drug abuse",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chronic illness",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "medication",
+          "synonyms": [
+            "prescription",
+            "medications",
+            "drugs",
+            "medicines",
+            "prescribed",
+            "treatment",
+            "pills",
+            "meds",
+            "painkillers"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "symptom",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sadness",
+          "synonyms": [
+            "sorrow",
+            "grief",
+            "regret",
+            "unhappiness",
+            "sad",
+            "bitterness",
+            "despair",
+            "anguish",
+            "hopelessness",
+            "misery",
+            "despondency",
+            "agony",
+            "remorse",
+            "desperation",
+            "helplessness",
+            "guilt",
+            "discouragement",
+            "powerlessness",
+            "pity",
+            "dismay",
+            "loneliness",
+            "shame",
+            "disgust",
+            "dissatisfaction",
+            "displeasure",
+            "discontent"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "emptiness",
+          "synonyms": [
+            "nothingness",
+            "loneliness",
+            "hopelessness",
+            "despair",
+            "aloneness",
+            "meaninglessness",
+            "sadness",
+            "blankness",
+            "formlessness",
+            "longing",
+            "despondency",
+            "sorrow",
+            "desperation",
+            "powerlessness",
+            "helplessness",
+            "grief",
+            "unhappiness",
+            "desolation",
+            "regret"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hopelessness",
+          "synonyms": [
+            "despair",
+            "powerlessness",
+            "helplessness",
+            "desperation",
+            "despondency",
+            "worthlessness",
+            "loneliness",
+            "sadness",
+            "discouragement",
+            "unhappiness",
+            "anguish",
+            "dismay",
+            "uneasiness",
+            "uselessness",
+            "indifference"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "irritability",
+          "synonyms": [
+            "sleeplessness",
+            "impulsivity",
+            "drowsiness",
+            "sleepiness",
+            "restlessness",
+            "moodiness",
+            "tearfulness",
+            "lethargy",
+            "tiredness",
+            "insomnia",
+            "somnolence",
+            "fatigue",
+            "weariness",
+            "agitation",
+            "apathy",
+            "listlessness",
+            "dizziness",
+            "grogginess"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "suicide",
+          "synonyms": [
+            "suicidal",
+            "death",
+            "dying",
+            "ideation",
+            "want to kill myself",
+            "want to die"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "self-harm",
+          "synonyms": [
+            "ideations",
+            "suicidality",
+            "self-injury",
+            "self-mutilation",
+            "suicide"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "lack of energy",
+          "synonyms": [
+            "tired",
+            "tiredness",
+            "exhaustion",
+            "exhausted",
+            "bored",
+            "apathetic"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "stress",
+          "synonyms": [
+            "tension",
+            "anxiety",
+            "strain",
+            "pressure",
+            "duress",
+            "fatigue",
+            "uneasiness",
+            "depression",
+            "unease",
+            "apprehension",
+            "weariness",
+            "anxiousness"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "worthlessness",
+          "synonyms": [
+            "uselessness",
+            "futility",
+            "hopelessness",
+            "unworthiness",
+            "powerlessness",
+            "inadequacy",
+            "helplessness",
+            "purposelessness",
+            "despondency",
+            "unworthy",
+            "despair",
+            "discouragement",
+            "desperation",
+            "meaninglessness",
+            "dejection",
+            "aimlessness",
+            "disinterest",
+            "unhappiness",
+            "apathy",
+            "loneliness"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "frustration",
+          "synonyms": [
+            "dissatisfaction",
+            "discontent",
+            "anger",
+            "unhappiness",
+            "resentment",
+            "anguish",
+            "dismay",
+            "displeasure",
+            "unease",
+            "indignation",
+            "exasperation",
+            "disdain",
+            "discontentment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "guilt",
+          "synonyms": [
+            "remorse",
+            "hopelessness",
+            "grief",
+            "sadness",
+            "resentment",
+            "helplessness",
+            "anguish",
+            "inadequacy",
+            "loneliness",
+            "sorrow",
+            "despair",
+            "powerlessness",
+            "anger",
+            "unhappiness",
+            "heartache",
+            "regret",
+            "bitterness",
+            "desperation",
+            "agony"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "insomnia",
+          "synonyms": [
+            "sleeplessness",
+            "migraines",
+            "restlessness",
+            "lack of sleep"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "restlessness",
+          "synonyms": [
+            "agitation",
+            "irritability",
+            "sleeplessness",
+            "listlessness",
+            "nervousness",
+            "moodiness",
+            "jitteriness",
+            "uneasiness",
+            "anxiety",
+            "unease",
+            "insomnia",
+            "anxiousness",
+            "disquiet",
+            "drowsiness",
+            "sleepiness",
+            "malaise",
+            "disorientation"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "yeah",
+            "yep",
+            "yup",
+            "sure"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "nope",
+            "nah",
+            "naw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "not sure",
+          "synonyms": [
+            "i don't know",
+            "dunno"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "self harm jump",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_15_1544146455853",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_18_1544146832320"
+      },
+      "conditions": "#yes",
+      "dialog_node": "node_16_1544146698395"
+    },
+    {
+      "type": "standard",
+      "title": "Q2",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you often feel down, sad, depressed, or hopeless?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1544144905114",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_3_1544145001111"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1543969897938",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1541609017568"
+      },
+      "conditions": "#yes",
+      "dialog_node": "node_4_1544145152009",
+      "previous_sibling": "node_2_1543971492757"
+    },
+    {
+      "type": "standard",
+      "title": "Close chatbot",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good end!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1543969897938",
+      "metadata": {},
+      "conditions": "#no",
+      "dialog_node": "node_2_1543971492757"
+    },
+    {
+      "type": "standard",
+      "title": "Q4",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you feel tired or like you have no energy?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1544146027286",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_9_1544146094977"
+    },
+    {
+      "type": "standard",
+      "title": "Q3",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you have trouble falling asleep, staying asleep, or do you sleep too much?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1544145001111",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_8_1544146027286"
+    },
+    {
+      "type": "standard",
+      "title": "Q6",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you feel bad about yourself a lot? For example, do you feel like a failure, or that you've let the people you care about down?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_11_1544146162507",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_12_1544146209249"
+    },
+    {
+      "type": "standard",
+      "title": "Q7",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have you had trouble concentrating?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1544146209249",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_13_1544146346726"
+    },
+    {
+      "type": "standard",
+      "title": "Elaboration",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have you been feeling this way for 2 weeks or more?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1541609017568",
+      "metadata": {},
+      "conditions": "#bad",
+      "dialog_node": "node_4_1543971749957"
+    },
+    {
+      "type": "standard",
+      "title": "-2 weeks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is there anything else you'd like to talk about?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1543971749957",
+      "metadata": {},
+      "conditions": "#no",
+      "dialog_node": "node_1_1544134143905",
+      "previous_sibling": "node_5_1543971804003"
+    },
+    {
+      "type": "standard",
+      "title": "2+ weeks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm going to ask you some questions to check on your health, okay?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1543971749957",
+      "metadata": {},
+      "conditions": "#yes",
+      "dialog_node": "node_5_1543971804003"
+    },
+    {
+      "type": "standard",
+      "title": "Q1",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you feel like you have little interest or pleasure while doing things?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1543971804003",
+      "metadata": {},
+      "conditions": "#yes",
+      "dialog_node": "node_2_1544144905114"
+    },
+    {
+      "type": "standard",
+      "title": "doesnt want to talk",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1541608845167",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1541569329626"
+      },
+      "conditions": "#no",
+      "dialog_node": "node_2_1544147386848",
+      "previous_sibling": "node_1_1543969897938"
+    },
+    {
+      "type": "standard",
+      "title": "Check for negativity",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Is there anything going on in your life that's negatively impacting your mental health?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1541608845167",
+      "metadata": {},
+      "conditions": "#yes",
+      "dialog_node": "node_1_1543969897938"
+    },
+    {
+      "type": "standard",
+      "title": "Q8",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Do you seem to be either very fidgety or very lethargic?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_13_1544146346726",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_14_1544146413441"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1544134143905",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1541609017568"
+      },
+      "conditions": "#yes",
+      "dialog_node": "node_6_1544145709538",
+      "previous_sibling": "node_5_1544145534466"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1544134143905",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1541569329626"
+      },
+      "conditions": "#no",
+      "dialog_node": "node_5_1544145534466"
+    },
+    {
+      "type": "standard",
+      "title": "Q9",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Have you been feeling that you want to hurt yourself, or that you would be better off dead?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_14_1544146413441",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_15_1544146455853"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good morning. How are you doing today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "metadata": {},
+      "dialog_node": "node_1_1541540350688",
+      "previous_sibling": "node_2_1541609017568"
+    },
+    {
+      "type": "standard",
+      "title": "Negative/Neutral emotion",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You don't sound very happy. Can you elaborate on what's bothering you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "conditions": "#bad || #yes",
+      "dialog_node": "node_2_1541609017568",
+      "previous_sibling": "node_1_1541608845167"
+    },
+    {
+      "type": "standard",
+      "title": "Positive emotion",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That's good! Is there anything you'd like to talk about?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "metadata": {},
+      "conditions": "#good",
+      "dialog_node": "node_1_1541608845167"
+    },
+    {
+      "type": "standard",
+      "title": "Q5",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Are you eating too much or too little?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1544146094977",
+      "metadata": {},
+      "conditions": "#yes || #no",
+      "dialog_node": "node_11_1544146162507"
+    },
+    {
+      "type": "standard",
+      "title": "end",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Goodbye!"
+              },
+              {
+                "text": "Have a good day!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "context": {
+        "end_conversation": true
+      },
+      "metadata": {},
+      "conditions": "#General_Ending",
+      "dialog_node": "node_3_1541569329626",
+      "previous_sibling": "node_18_1544146832320"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1541569329626"
+    },
+    {
+      "type": "standard",
+      "title": "self harm/suicide",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please don't hurt yourself! If you're at risk, find your country's suicide hotline number here: http://www.suicide.org/international-suicide-hotlines.html. If you're not at risk now, I would suggest finding a therapist or trusted person you can share your thoughts with. In the United States, you can use these resources: https://www.psychologytoday.com/us/therapists, https://afsp.org/, and https://www.sprc.org/."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1541569329626"
+      },
+      "conditions": "@symptom:suicide || @symptom:self-harm",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_18_1544146832320",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How are you doing today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "conversation_start",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome",
+      "digress_out": "allow_all"
+    }
+  ],
+  "workspace_id": "1e7277b6-c5ec-4e49-b872-4f4a4caf5d25",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
